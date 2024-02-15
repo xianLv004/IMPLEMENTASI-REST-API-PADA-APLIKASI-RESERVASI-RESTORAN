@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pesanan">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content">
+        <ListView
+            android:id="@+id/listpesan"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:divider="@color/black"
+            android:dividerHeight="2dp"
+            />
+           </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <Button
+        android:id="@+id/btnpesan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:text="Pesan Tempat"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:onClick="pesan"
+        android:background="@drawable/card"
+        />
+
+</RelativeLayout>
